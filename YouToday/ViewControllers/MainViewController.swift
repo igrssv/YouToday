@@ -8,7 +8,12 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    private var heroURL = "https://www.superheroapi.com/api.php/4504394589582466/\(Int.random(in: 1...731))"
+    
+    private var url: String  {
+        get {
+            return "https://www.superheroapi.com/api.php/4504394589582466/\(Int.random(in: 1...731))"
+        }
+    }
     
     //MARK: - IBOutlet
     @IBOutlet weak var heroImageView: UIImageView!
@@ -21,14 +26,14 @@ class MainViewController: UIViewController {
     @IBAction func youToday(_ sender: UIButton) {
         getHero()
         
-        sender.setTitle("Wow!", for: .normal)
+        sender.setTitle("Try again?", for: .normal)
     }
 }
 
     //MARK: - currentHero
 extension MainViewController {
     func getHero() {
-        guard let url = URL(string: heroURL) else { return }
+        guard let url = URL(string: url) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
@@ -55,6 +60,7 @@ extension MainViewController {
             self.heroFullName.text = "Gender: " +  hero.appearance.gender
             self.heroRase.text = "Rase: " + hero.appearance.race
             self.heroAligment.text = "Alignment: " + hero.biography.alignment
+            
         }
     }
 }
