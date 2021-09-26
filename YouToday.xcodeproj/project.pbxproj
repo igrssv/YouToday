@@ -56,15 +56,47 @@
 		8E165B9127008054000A08FB /* YouToday */ = {
 			isa = PBXGroup;
 			children = (
-				8E165B9227008054000A08FB /* AppDelegate.swift */,
-				8E165B9427008054000A08FB /* SceneDelegate.swift */,
-				8E165B9627008054000A08FB /* ViewController.swift */,
-				8E165B9827008054000A08FB /* Main.storyboard */,
-				8E165B9B27008055000A08FB /* Assets.xcassets */,
-				8E165B9D27008055000A08FB /* LaunchScreen.storyboard */,
-				8E165BA027008055000A08FB /* Info.plist */,
+				8E165BA627008080000A08FB /* App */,
+				8E165BA727008088000A08FB /* ViewControllers */,
+				8E165BA827008096000A08FB /* Storyboards */,
+				8E165BA9270080A6000A08FB /* Resources */,
 			);
 			path = YouToday;
+			sourceTree = "<group>";
+		};
+		8E165BA627008080000A08FB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8E165B9227008054000A08FB /* AppDelegate.swift */,
+				8E165B9427008054000A08FB /* SceneDelegate.swift */,
+				8E165BA027008055000A08FB /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8E165BA727008088000A08FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E165B9627008054000A08FB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8E165BA827008096000A08FB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E165B9827008054000A08FB /* Main.storyboard */,
+				8E165B9D27008055000A08FB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8E165BA9270080A6000A08FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E165B9B27008055000A08FB /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9WQ2FGRF6;
-				INFOPLIST_FILE = YouToday/Info.plist;
+				INFOPLIST_FILE = YouToday/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = igrssv.YouToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9WQ2FGRF6;
-				INFOPLIST_FILE = YouToday/Info.plist;
+				INFOPLIST_FILE = YouToday/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = igrssv.YouToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
